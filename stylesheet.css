@@ -1,0 +1,136 @@
+/* Reset styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* 水色の背景色 */
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #00acc1; /* 水色のヘッダー背景色 */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #0097a7; /* 濃い水色のナビゲーション背景色 */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #00838f; /* ナビゲーションホバー時の色 */
+}
+
+/* Page content container */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1534358010728-e8e349c134e7') no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Section title */
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: #00acc1; /* 水色のセクションタイトル */
+}
+
+/* Event item */
+.event {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.event:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event h3 {
+    margin-top: 0;
+    color: #00acc1; /* 水色のイベントタイトル */
+}
+
+.event img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #0097a7; /* 濃い水色のフッター背景色 */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Text shadows for titles and headers */
+header h1,
+nav a,
+.section-title,
+.event h3 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
